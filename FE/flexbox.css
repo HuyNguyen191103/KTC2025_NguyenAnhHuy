@@ -1,0 +1,18 @@
+ul {
+  display: inline-flex;
+  flex-flow: row wrap;
+  column-gap: 30px;
+  row-gap: 20px; /* cách dòng */
+  justify-content: center;
+  border: 1px solid blue;
+  list-style-type: none;
+  padding-inline-start: 0;
+  text-align: center;
+}
+
+li {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  margin: 10px;
+}

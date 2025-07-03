@@ -1,0 +1,31 @@
+.box {
+  padding: 20px;
+  width: 100px;
+  color: white;
+}
+
+.box-1 {
+  position: static;
+  background-color: red;
+}
+
+.box-2 {
+  position: relative;
+  top: 50px;
+  left: 30px;
+  background-color: blue;
+}
+
+.box-3 {
+  position: relative; /* relative là so sánh với bản thân nó trước đó */
+  top: 100px;
+  left: 50px;
+  background-color: green;
+}
+
+.box-4 {
+  position: absolute; /* absolute là sẽ so sánh với phần tử cha của nó */
+  top: 50px;
+  left: 50px;
+  background-color: blueviolet;
+}

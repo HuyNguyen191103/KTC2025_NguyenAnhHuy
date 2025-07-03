@@ -1,0 +1,24 @@
+#menu{
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: aqua;
+    text-align: center;
+}
+/* .menuItem{
+    display: inline-block;
+    width: 19%;
+} */
+
+#menu > .menuItem{
+    display: inline-block;
+    width: 19%;
+}
+li:hover{
+    background-color: azure;
+}
+
+.menuItem:hover::before {
+    content: ">";
+    color: red;
+}

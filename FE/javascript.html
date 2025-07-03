@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1,
+      #div2 {
+        background-color: orange;
+        padding: 50px;
+        margin-bottom: 20px;
+      }
+      #myP1,
+      #myP2 {
+        background-color: white;
+        border: 1px solid black;
+        font-size: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="firstDiv">
+      <p id="p1">This is firstDiv</p>
+      <p id="p2">This is second div</p>
+    </div>
+    <button onclick="testJs()">Click</button><br />
+    <!-- <img id="myImage" src="../pic/equipment1.jpg" alt="test" />
+    <button onclick="changeImage()">Click Here to changeImage</button> -->
+    <p id="text">Hello World</p>
+    <button onclick="changeColorRed()">Red</button>
+    <button onclick="changeColorBlue()">Blue</button><br />
+    <label form="fullName">Enter your name</label>
+    <input type="text" id="fullName" onchange="toUpperCase()" />
+    <label id="warningLabel" style="color: red; display: none"
+      >Vui lòng không để trống</label
+    ><br /><br />
+    <!-- <div id="mySpace" class="my-space" onmouseover="mOver(this)" onmouseout="mOut(this)">HERE</div> -->
+    <div
+      id="mySpace"
+      class="my-space"
+      onmousedown="mDown(this)"
+      onmouseup="mUp(this)"
+    >
+      HERE
+    </div>
+    <br />
+    <button id="timeBtn">Display time</button>
+    <p id="result"></p>
+
+    <div id="div1">
+      <h1>Bubbling</h1>
+      <p id="myP1">Click me</p>
+    </div>
+    <div id="div2">
+      <h1>Capturing</h1>
+      <p id="myP2">Click me</p>
+    </div>
+
+    <div id="div3">
+      <p>hover for random number</p>
+      <p>click button to remove event</p>
+      <button id="myBtnRemove" onclick="removeEvent()">Remove</button>
+      <p id="randomNumber"></p>
+    </div>
+    <button id="myBtn3">Come Here</button>
+    <p id="mousemove"></p>
+  </body>
+
+  <script>
+    // function testJs() {              Remove element
+    //     let firstDiv = document.getElementById("firstDiv");
+    //     let firstP = document.getElementById("p1");
+    //     firstDiv.removeChild(firstP);
+    // }
+    function testJs() {
+      let firstDiv = document.getElementById("firstDiv");
+      let firstP = document.getElementById("p1");
+      let newP = document.createElement("p");
+      let newText = document.createTextNode("This is new P");
+      newP.appendChild(newText);
+      firstDiv.replaceChild(newP, firstP);
+    }
+    function changeImage() {
+      let newImageUrl =
+        "https://tse4.mm.bing.net/th/id/OIP.0s6ZOxZebZOlUvFUGlt3QQHaEK?pid=Api&P=0&h=220";
+      let oldImageUrl = "../pic/equipment1.jpg";
+      document.getElementById("myImage").src = newImageUrl;
+    }
+
+    function changeColorRed() {
+      let currentText = document.getElementById("text");
+      currentText.style.color = "red";
+      currentText.style.fontWeight = "bold";
+    }
+
+    function changeColorBlue() {
+      let currentText = document.getElementById("text");
+      currentText.style.color = "blue";
+    }
+
+    function toUpperCase() {
+      let fullName = document.getElementById("fullName");
+      let warningLabel = document.getElementById("warningLabel");
+      let value = fullName.value.trim();
+      if (value === "") {
+        warningLabel.style.display = "inline";
+      } else {
+        warningLabel.style.display = "none";
+        fullName.value = value.toUpperCase();
+      }
+    }
+
+    function mOver(currentTag) {
+      currentTag.innerHTML = "HELLO";
+    }
+    function mOut(currentTag) {
+      currentTag.innerHTML = "HOVER HERRE";
+    }
+
+    function mDown(currentTag) {
+      currentTag.style.backgroundColor = "red";
+    }
+    function mUp(currentTag) {
+      currentTag.style.backgroundColor = "blue";
+    }
+
+    document.getElementById("timeBtn").addEventListener("click", displayDate);
+    function displayDate() {
+      document.getElementById("result").innerHTML = Date();
+    }
+
+    document.getElementById("div1").addEventListener(
+      "click",
+      function () {
+        alert("you click in orange background");
+      },
+      false
+    );
+    document.getElementById("myP1").addEventListener(
+      "click",
+      function () {
+        alert("you click in white background");
+      },
+      false
+    );
+    document.getElementById("div2").addEventListener(
+      "click",
+      function () {
+        alert("you click in orange background");
+      },
+      true
+    );
+    document.getElementById("myP2").addEventListener(
+      "click",
+      function () {
+        alert("you click in white background");
+      },
+      true
+    );
+
+    document.getElementById("div3").addEventListener("mousemove", randomNumber);
+    function randomNumber() {
+      document.getElementById("randomNumber").innerHTML = Math.random();
+    }
+    function removeEvent() {
+      document
+        .getElementById("div3")
+        .removeEventListener("mousemove", randomNumber);
+    }
+
+    let myBtn3 = document.getElementById("myBtn3");
+    myBtn3.addEventListener("mouseover", overFunc);
+    myBtn3.addEventListener("click", clickFunc);
+    myBtn3.addEventListener("mouseout", outFunc);
+    function overFunc() {
+      document.getElementById("mousemove").innerHTML += "Mouse over!<br>";
+    }
+    function clickFunc() {
+      document.getElementById("mousemove").innerHTML += "Clicked!<br>";
+    }
+    function outFunc() {
+      document.getElementById("mousemove").innerHTML += "Mouse out!<br>";
+    }
+  </script>
+</html>

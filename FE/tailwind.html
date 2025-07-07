@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Bootstrap và tailwind là CSS Framework -->
+    <!-- 
+        Bootstrap: component based
+                    12 columns
+                    disadvance: heavy file
+                                need to override code
+
+        Tailwind: utility based (Cung cấp từng class css nhỏ)
+                    24 columns(more specific)
+                    lightweight because just use once css class not a component like Bootstrap
+                    Friendly with SEO
+     -->
+    <div
+      class="container mx-auto p-2 border-4 border-red-500 bg-yellow-100 text-center">
+      <div class="flex justify-center h-20">
+      <div class="header border border-black w-2/6 flex">
+        <div class="logo w-1/2">
+            <img src="https://static.topcv.vn/v4/image/logo/topcv-logo-6.png" class="w-full h-full object-contain"  >
+        </div>
+        <div class="address w-1/2 flex items-center justify-center">1234, abcde, p14</div>
+        <!-- flex items-center: canh giữa theo chiều dọc, justify-center: canh giữa theo chiều ngang -->
+      </div>
+      <div class="header border border-black w-4/6">HEADER 2</div><br>
+      </div>
+      
+      <div class="main border border-black mr-10 ml-10 mt-2 mb-2">MAIN</div>
+      <div class="footer border border-black">FOOTER</div>
+    </div>
+  </body>
+</html>

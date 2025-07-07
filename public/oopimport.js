@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var oop_1 = require("./oop");
+var s1 = new oop_1.default(1, "An", 20);
+var s2 = new oop_1.default(2, "Bình", 21);
+var s3 = new oop_1.default(3, "Cường", 22);
+var sArr = new Array();
+sArr.push(s1);
+sArr.push(s2);
+sArr.push(s3);
+console.log(sArr);

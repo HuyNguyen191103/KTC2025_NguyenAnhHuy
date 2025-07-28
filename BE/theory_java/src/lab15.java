@@ -45,6 +45,10 @@ public class lab15 {
                     break;
 
                 case "4":
+                    if (salary == 0.0) {
+                        System.out.print("Nhập lương của bạn: ");
+                        salary = scanner.nextDouble();
+                    }
                     double netIncome = salary - electricityBill - taxiBill;
                     System.out.println("=> Tổng thu nhập còn lại sau chi tiêu: " + netIncome + " đồng\n");
                     break;

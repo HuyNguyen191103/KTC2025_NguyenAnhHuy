@@ -47,7 +47,9 @@ public class lab15 {
                 case "4":
                     if (salary == 0.0) {
                         System.out.print("Nhập lương của bạn: ");
-                        salary = scanner.nextDouble();
+                        double gross_Salary = Double.parseDouble(scanner.nextLine());
+                        salary = gross_Salary * 0.85;
+                        System.out.println("=> Lương sau thuế: " + salary + " đồng\n");
                     }
                     double netIncome = salary - electricityBill - taxiBill;
                     System.out.println("=> Tổng thu nhập còn lại sau chi tiêu: " + netIncome + " đồng\n");

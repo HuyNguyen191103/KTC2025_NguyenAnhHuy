@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="453c62c1-fcea-4aad-aaa8-c3c8aab86cc0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../lesson-26-docker-cicd-pipelines/customer-app/customer-app" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-26-docker-cicd-pipelines/customer-app/customer-app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lesson-26-docker-cicd-pipelines/customer-service/customer-service" beforeDir="false" afterPath="$PROJECT_DIR$/../lesson-26-docker-cicd-pipelines/customer-service/customer-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../theory-25-spring-security-jwt-role-based-auth" beforeDir="false" afterPath="$PROJECT_DIR$/../theory-25-spring-security-jwt-role-based-auth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../theory-27-clean-code-solid-design-pattern" beforeDir="false" afterPath="$PROJECT_DIR$/../theory-27-clean-code-solid-design-pattern" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../theory-30-oauth2-app" beforeDir="false" afterPath="$PROJECT_DIR$/../theory-30-oauth2-app" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../theory-30-oauth2-service" beforeDir="false" afterPath="$PROJECT_DIR$/../theory-30-oauth2-service" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "HuyNguyen191103"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/HuyNguyen191103/HtmlLab1.git",
+    "accountId": "807a7438-e82f-4fc1-9d46-7c877cdefd77"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="320LFi1FeloG2Uccb1Rpoy2pg3p" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/84945/Desktop/KTC_2025/BE/vnpay_jsp"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="453c62c1-fcea-4aad-aaa8-c3c8aab86cc0" name="Changes" comment="" />
+      <created>1756552441719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756552441719</updated>
+    </task>
+    <servers />
+  </component>
+</project>
